@@ -15,13 +15,15 @@
                            textAlignment:(NSTextAlignment)alignment
                            numberOfLines:(NSInteger)numberOfLines
                                     font:(UIFont*)font
+                          adjustFontSize:(BOOL)adjust
 {
-    UILabel* lb        = [UILabel new];
-    lb.backgroundColor = backgroundColor;
-    lb.textColor       = textColor;
-    lb.textAlignment   = alignment;
-    lb.numberOfLines   = numberOfLines;
-    lb.font            = font;
+    UILabel* lb                  = [UILabel new];
+    lb.backgroundColor           = backgroundColor;
+    lb.textColor                 = textColor;
+    lb.textAlignment             = alignment;
+    lb.numberOfLines             = numberOfLines;
+    lb.font                      = font;
+    lb.adjustsFontSizeToFitWidth = adjust;
 
     return lb;
 }

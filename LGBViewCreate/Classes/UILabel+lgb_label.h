@@ -14,6 +14,7 @@
                                textColor:(UIColor*)textColor
                            textAlignment:(NSTextAlignment)alignment
                            numberOfLines:(NSInteger)numberOfLines
-                                    font:(UIFont*)font;
+                                    font:(UIFont*)font
+                          adjustFontSize:(BOOL)adjust;
 
 @end
