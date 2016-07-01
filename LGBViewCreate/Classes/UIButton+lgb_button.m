@@ -40,6 +40,15 @@
     return bt;
 }
 
+- (void)lgb_setBackgroundImage:(UIImage*)image highlightedImage:(UIImage*)highlightedImage
+{
+    [self setBackgroundImage:image forState:UIControlStateNormal];
+    if (highlightedImage)
+    {
+        [self setBackgroundImage:highlightedImage forState:UIControlStateHighlighted];
+    }
+}
+
 - (void)lgb_setAction:(void (^) (void))action
 {
     [self addTarget:self action:@selector (lgb_handleButton) forControlEvents:UIControlEventTouchUpInside];
