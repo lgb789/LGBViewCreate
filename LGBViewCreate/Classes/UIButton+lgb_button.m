@@ -11,6 +11,7 @@
 
 @implementation UIButton (lgb_button)
 
+//class methods
 + (UIButton*)lgb_buttonWithTitle:(NSString*)title
                       titleColor:(UIColor*)titleColor
            titleHighlightedColor:(UIColor*)titleHighlightedColor
@@ -40,6 +41,19 @@
     return bt;
 }
 
++ (UIButton*)lgb_buttonWithImage:(UIImage*)image selectedImage:(UIImage*)selectedImage
+{
+    UIButton* bt = [UIButton buttonWithType:UIButtonTypeCustom];
+    [bt setImage:image forState:UIControlStateNormal];
+    if (selectedImage)
+    {
+        [bt setImage:selectedImage forState:UIControlStateSelected];
+    }
+    
+    return bt;
+}
+
+//object methods
 - (void)lgb_setBackgroundImage:(UIImage*)image highlightedImage:(UIImage*)highlightedImage
 {
     [self setBackgroundImage:image forState:UIControlStateNormal];

@@ -17,6 +17,10 @@
 
 + (UIButton*)lgb_buttonWithImage:(UIImage*)image highlightedImage:(UIImage*)highlightedImage;
 
++ (UIButton*)lgb_buttonWithImage:(UIImage*)image selectedImage:(UIImage*)selectedImage;
+
+
+
 - (void)lgb_setBackgroundImage:(UIImage*)image highlightedImage:(UIImage*)highlightedImage;
 
 - (void)lgb_setAction:(void (^) (void))action;
