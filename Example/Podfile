@@ -4,7 +4,7 @@ target 'LGBViewCreate_Example' do
   pod 'LGBViewCreate', :path => '../'
 
   target 'LGBViewCreate_Tests' do
-    inherit! :search_paths
+    pod 'LGBViewCreate', :path => '../'
 
     
   end

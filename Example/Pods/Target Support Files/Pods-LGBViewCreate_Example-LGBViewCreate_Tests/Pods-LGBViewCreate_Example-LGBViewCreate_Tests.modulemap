@@ -1,0 +1,6 @@
+framework module Pods_LGBViewCreate_Example_LGBViewCreate_Tests {
+  umbrella header "Pods-LGBViewCreate_Example-LGBViewCreate_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
