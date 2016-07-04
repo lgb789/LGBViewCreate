@@ -12,5 +12,6 @@
 #import "UILabel+lgb_label.h"
 #import "UIButton+lgb_button.h"
 #import "UITextField+lgb_textField.h"
+#import "UITableView+lgb_tableView.h"
 
 #endif /* LGBViewCreate_h */
