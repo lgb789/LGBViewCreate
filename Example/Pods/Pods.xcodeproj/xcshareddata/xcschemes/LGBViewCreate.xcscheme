@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4F809BDE7EE881965D0074FA'
+               BlueprintIdentifier = 'A2EE73F8B9438542D8810018'
                BlueprintName = 'LGBViewCreate'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'LGBViewCreate.framework'>
