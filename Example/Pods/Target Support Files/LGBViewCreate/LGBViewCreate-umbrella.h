@@ -1,5 +1,7 @@
 #import <UIKit/UIKit.h>
 
+#import "LGBTableViewManager.h"
+#import "LGBTableViewTypeDef.h"
 #import "LGBViewCreate.h"
 #import "UIButton+lgb_button.h"
 #import "UILabel+lgb_label.h"

@@ -1,5 +1,5 @@
 PODS:
-  - LGBViewCreate (0.1.3)
+  - LGBViewCreate (0.1.5)
 
 DEPENDENCIES:
   - LGBViewCreate (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  LGBViewCreate: b830a212ca539fbbb70f7d38985ca8a9533bdf65
+  LGBViewCreate: 05aa802dc31e1e7970452622487bf022c716f652
 
 COCOAPODS: 0.39.0

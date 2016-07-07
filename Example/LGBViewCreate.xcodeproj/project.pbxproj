@@ -22,6 +22,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		CA06974A69F3E30BA8F9909E /* Pods_LGBViewCreate_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D0D44B5B3C7809C61CA2CB /* Pods_LGBViewCreate_Example.framework */; };
+		CFEB40B91D2EBED60041E9CC /* LGBTestTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEB40B81D2EBED60041E9CC /* LGBTestTableController.m */; };
 		D0190A0A62479295FAB69393 /* Pods_LGBViewCreate_Example_LGBViewCreate_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5D1219D36293CFFCE89786 /* Pods_LGBViewCreate_Example_LGBViewCreate_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,8 @@
 		8EF41F1585500F75A2A382F1 /* Pods-LGBViewCreate_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGBViewCreate_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LGBViewCreate_Example/Pods-LGBViewCreate_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BB5D1219D36293CFFCE89786 /* Pods_LGBViewCreate_Example_LGBViewCreate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LGBViewCreate_Example_LGBViewCreate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAFD23AFD664080C58DB7CF8 /* Pods-LGBViewCreate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGBViewCreate_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LGBViewCreate_Example/Pods-LGBViewCreate_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		CFEB40B71D2EBED60041E9CC /* LGBTestTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGBTestTableController.h; sourceTree = "<group>"; };
+		CFEB40B81D2EBED60041E9CC /* LGBTestTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGBTestTableController.m; sourceTree = "<group>"; };
 		E6D0D44B5B3C7809C61CA2CB /* Pods_LGBViewCreate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LGBViewCreate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -137,6 +140,8 @@
 				6003F5A6195388D20070C39A /* LGBViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				CFEB40B71D2EBED60041E9CC /* LGBTestTableController.h */,
+				CFEB40B81D2EBED60041E9CC /* LGBTestTableController.m */,
 			);
 			name = "Example for LGBViewCreate";
 			path = LGBViewCreate;
@@ -390,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFEB40B91D2EBED60041E9CC /* LGBTestTableController.m in Sources */,
 				6003F59E195388D20070C39A /* LGBAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* LGBViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
