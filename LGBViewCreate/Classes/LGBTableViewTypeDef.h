@@ -11,21 +11,21 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NSInteger (^LGBRowsOfSection) (NSInteger section);
+typedef NSInteger (^LGBRowsOfSection) (UITableView* tableView, NSInteger section);
 
-typedef CGFloat (^LGBHeightOfRow) (NSIndexPath* indexPath);
+typedef CGFloat (^LGBHeightOfRow) (UITableView* tableView, NSIndexPath* indexPath);
 
 typedef UITableViewCell* (^LGBConfigCell) (UITableView* tableView, NSIndexPath* indexPath);
 
 typedef void (^LGBSelectedRow) (UITableView* tableView, NSIndexPath* indexPath);
 
-typedef CGFloat(^LGBHeightForHeader)(NSInteger section);
+typedef CGFloat(^LGBHeightForHeader)(UITableView* tableView, NSInteger section);
 
-typedef CGFloat(^LGBHeightForFooter)(NSInteger section);
+typedef CGFloat(^LGBHeightForFooter)(UITableView* tableView, NSInteger section);
 
-typedef UIView *(^LGBViewForHeader)(NSInteger section);
+typedef UIView *(^LGBViewForHeader)(UITableView* tableView, NSInteger section);
 
-typedef UIView *(^LGBViewForFooter)(NSInteger section);
+typedef UIView *(^LGBViewForFooter)(UITableView* tableView, NSInteger section);
 
 
 #endif /* LGBTableViewTypeDef_h */

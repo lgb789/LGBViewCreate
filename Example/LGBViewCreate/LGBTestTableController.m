@@ -27,11 +27,11 @@
 
     UITableView* tv = [UITableView lgb_tableViewWithStyle:UITableViewStylePlain
     NumberOfSection:1
-    numberOfRows:^NSInteger (NSInteger section) {
+    numberOfRows:^NSInteger (UITableView* tableView, NSInteger section) {
       NSLog (@"rows");
       return 3;
     }
-    heightOfRow:^CGFloat (NSIndexPath* indexPath) {
+    heightOfRow:^CGFloat (UITableView* tableView, NSIndexPath* indexPath) {
       NSLog (@"height");
       return 44;
     }
@@ -49,11 +49,11 @@
       [tableView deselectRowAtIndexPath:indexPath animated:YES];
     }];
     
-    [tv lgb_setHeaderView:^UIView *(NSInteger section) {
+    [tv lgb_setHeaderView:^UIView *(UITableView* tableView, NSInteger section) {
         UIView *view = [UIView new];
         view.backgroundColor = [UIColor lightGrayColor];
         return view;
-    } height:^CGFloat(NSInteger section) {
+    } height:^CGFloat(UITableView* tableView, NSInteger section) {
         return 30;
     }];
 

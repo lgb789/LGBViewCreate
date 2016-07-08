@@ -24,7 +24,7 @@
 #pragma mark - UITableViewDelegate
 - (NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return (self.rowsOfSection ? self.rowsOfSection (section) : 0);
+    return (self.rowsOfSection ? self.rowsOfSection (tableView, section) : 0);
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView*)tableView
@@ -34,7 +34,7 @@
 
 - (CGFloat)tableView:(UITableView*)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath
 {
-    return (self.rowHeight ? self.rowHeight (indexPath) : 0);
+    return (self.rowHeight ? self.rowHeight (tableView, indexPath) : 0);
 }
 
 - (UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath*)indexPath
@@ -52,22 +52,22 @@
 
 - (UIView*)tableView:(UITableView*)tableView viewForHeaderInSection:(NSInteger)section
 {
-    return (self.headerView ? self.headerView (section) : nil);
+    return (self.headerView ? self.headerView (tableView, section) : nil);
 }
 
 - (UIView*)tableView:(UITableView*)tableView viewForFooterInSection:(NSInteger)section
 {
-    return (self.footerView ? self.footerView (section) : nil);
+    return (self.footerView ? self.footerView (tableView, section) : nil);
 }
 
 - (CGFloat)tableView:(UITableView*)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return (self.headerHeight ? self.headerHeight (section) : 0);
+    return (self.headerHeight ? self.headerHeight (tableView, section) : 0);
 }
 
 - (CGFloat)tableView:(UITableView*)tableView heightForFooterInSection:(NSInteger)section
 {
-    return (self.footerHeight ? self.footerHeight (section) : 0);
+    return (self.footerHeight ? self.footerHeight (tableView, section) : 0);
 }
 
 #pragma mark - 事件处理

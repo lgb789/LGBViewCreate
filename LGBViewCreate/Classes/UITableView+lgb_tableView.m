@@ -12,11 +12,6 @@
 
 @implementation UITableView (lgb_tableView)
 
--(void)dealloc
-{
-    NSLog(@"dealloc tableview");
-}
-
 + (UITableView*)lgb_tableViewWithStyle:(UITableViewStyle)style delegate:(id)delegate dataSource:(id)dataSource
 {
     UITableView* tv = [[UITableView alloc] initWithFrame:CGRectZero style:style];
